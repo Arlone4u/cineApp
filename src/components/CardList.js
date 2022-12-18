@@ -10,13 +10,13 @@ const CardList = ({products, addToCart}) => {
         setDelay(true);
         setTimeout(() => {
             setDelay(false)
-        }, 1000);
+        }, 1500);
     }, [products])
 
     return (
         <Fragment>
             {
-                delay ? <img src="https://res.cloudinary.com/dkcpu9uv8/image/upload/v1671369137/loading-11_gm3kfd.gif" alt="loader" className="loader" />
+                delay ? <img src="https://res.cloudinary.com/dkcpu9uv8/image/upload/v1671369137/loading-11_gm3kfd.gif" alt="loader" className="loader"/>
                 :
                 <div>
                     <span className="products-length">{products.length} Item(s) found.</span>

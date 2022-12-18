@@ -35,8 +35,8 @@ const Cart = ({products, changeQuantity}) => {
                     
                     <div className="cart-content">
                     <h3>
-                        <img src="https://checkout.advancedshippingmanager.com/wp-content/uploads/2015/10/Cart-Icon-PNG-Graphic-Cave-e1461785088730-300x300.png" alt="cart" />
-                        Cart
+                        <img src="https://res.cloudinary.com/dkcpu9uv8/image/upload/v1671370636/black-shopping-cart-icon-22_bs6vef.png" alt="cart" />
+                        Your  Movie Cart
                     </h3> 
 
                     <div className="cart-list" data-testid="cart">
