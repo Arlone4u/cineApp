@@ -107,7 +107,7 @@ const CineApp = () => {
       <div className='background'>
       </div>
 
-      <div className='prod'>
+      <div className='prod' data-testid="productslist">
       <Movies products={movies} sortProducts={sortMovies} addToCart={addToCart} /> 
       </div>
     <Footer />
