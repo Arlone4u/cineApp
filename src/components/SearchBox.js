@@ -5,6 +5,7 @@ const SearchBox = (props) => {
 		<div className='col col-sm-4'>
 			<input
 				className='form-control'
+				data-testid="Searchbar"
 				value={props.value}
 				/*onChange={(event) => props.setSearchValue(event.target.value)}*/
 				placeholder='Type to search...'

@@ -44,7 +44,7 @@ return(
     </div>
     <div class="bottom-details">
       <div class="bottom_text">
-        <span class="copyright_text">Copyright © 2022 <a href="#">Oncet.</a>All rights reserved</span>
+        <span class="copyright_text">Copyright © 2022 <a href="#">Donjie and Friends.</a>All rights deserved</span>
         <span class="policy_terms">
           <a href="#">Privacy policy</a>
           <a href="#">Terms & condition</a>
