@@ -1,11 +1,11 @@
 import React from 'react';
-import Oncet from './Oncet';
+import PopcornHub from './popHub';
 
 const App = () => {
 
 return(
  <>
- <Oncet/>
+ <PopcornHub/>
  </>
 );
 
