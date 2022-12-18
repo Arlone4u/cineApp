@@ -1,5 +1,5 @@
 $ProductBod: hsl(0, 2%, 47%);
-$NavColor: #080f14;
+$NavColor: #080f14d2;
 $FoodNFontColor : #196ead;
 $CardBorder : #cccccc;
 $ItemColor: #333333;
@@ -50,7 +50,7 @@ $FontSize: 1.2rem;
     top: 0;
     overflow: hidden;
     background-color: $NavColor;
-    box-shadow: 5px 5px 20px rgb(59, 59, 59);
+    box-shadow: 5px 5px 20px rgb(44, 44, 44);
 }
 .sizes {
     margin: 5px;

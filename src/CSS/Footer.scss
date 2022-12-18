@@ -1,6 +1,6 @@
 $PrimaryColor: white;
 $Body : #EEECEB;
-$Footer :#bdbdbd;
+$Footer :#bdbdbd62;
 $LogoDetails:black;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 * {
@@ -34,7 +34,7 @@ footer::before {
 footer {
     .content {
         max-width: 1250px;
-        margin: auto;
+        margin-left: 5px;
         padding: 30px 40px 40px 40px;
     }
 }

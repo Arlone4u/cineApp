@@ -36,8 +36,8 @@
   position: sticky;
   top: 0;
   overflow: hidden;
-  background-color: #080f14;
-  box-shadow: 5px 5px 20px rgb(59, 59, 59);
+  background-color: rgba(8, 15, 20, 0.8235294118);
+  box-shadow: 5px 5px 20px rgb(44, 44, 44);
 }
 
 .sizes {

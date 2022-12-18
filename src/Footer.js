@@ -10,7 +10,7 @@ return(
       <div class="top">
         <div class="logo-details">
           <i class="fab fa-slack"></i>
-          <span class="logo_name">ONCET</span>
+          <span class="logo_name">POPCORN HUB</span>
         </div>
       </div>
       <div class="link-boxes">
