@@ -226,6 +226,11 @@ article{
     position: absolute;
     right: 520px;
     cursor: pointer;
+    background-color: rgb(175, 175, 175);
+    &:hover{
+        background-color: rgb(175, 175, 175);
+    }
+ 
 }
 .toggle-btn span {
     display: block;
@@ -234,6 +239,7 @@ article{
     background: $ToggleBtn ;
     margin: 5px 0px;
 }
+
 .cart-content h3 {
     display: flex;
     justify-content: center;
@@ -247,9 +253,13 @@ article{
     margin: 10px;
 }
 .cart-list {
-    background: $CartList;
+    background: $Backg;
     overflow-y: auto;
     height: 68vh;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.empty-cart{
+    background-color: rgb(255, 78, 78);
 }
 .cart-list::-webkit-scrollbar-track {
     background-color: #F5F5F5;

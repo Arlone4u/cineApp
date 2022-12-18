@@ -238,6 +238,10 @@ article {
   position: absolute;
   right: 520px;
   cursor: pointer;
+  background-color: rgb(175, 175, 175);
+}
+.toggle-btn:hover {
+  background-color: rgb(175, 175, 175);
 }
 
 .toggle-btn span {
@@ -263,9 +267,14 @@ article {
 }
 
 .cart-list {
-  background: whitesmoke;
+  background: #11181f;
   overflow-y: auto;
   height: 68vh;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.empty-cart {
+  background-color: rgb(255, 78, 78);
 }
 
 .cart-list::-webkit-scrollbar-track {

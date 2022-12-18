@@ -1,42 +1,29 @@
 import React, {useState, useEffect} from 'react';
-
-import Categories from './components/Categories';
-import Products from './components/Products';
+import Movies from './components/Movies';
 import Cart from './components/Cart';
 import SearchBox from './components/SearchBox';
+import MovieList from './components/MovieList';
 import filterList from './components/filterList';
 import './CSS/popHub.css';
 import Footer from './Footer';
 
 const CineApp = () => {
 
-  const [products, setProducts] = useState([]);
+  const [movies, setMovies] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [cart, setCart] = useState([]);
+  const [searchValue, setSearchValue] = useState('');
 
   useEffect(() => {
-    setProducts(filterList([], null));
+    setMovies(filterList([], null));
     if(JSON.parse(localStorage.getItem("cart"))) {
       setCart(JSON.parse(localStorage.getItem("cart")));
     }
   }, [])
 
-  const setCategories = (size) => {
-    const Categories = [...selectedCategories];
-    
-    if(Categories.includes(size)) {
-      const index = Categories.indexOf(size);
-      Categories.splice(index, 1);
-    }
-    else {
-      Categories.push(size);
-    }
-    setSelectedCategories(Categories);
-    setProducts(filterList(Categories, 'size'));
-  }
 
-  const sortProducts = (method) => {
-    const array = products;
+  const sortMovies = (method) => {
+    const array = movies;
 
     if(method === "Lowest to Highest") {
         array.sort(function(a, b){
@@ -48,7 +35,30 @@ const CineApp = () => {
           return b.price-a.price
       })
     }
-    setProducts(array);
+    else if(method === "A - Z") {
+      array.sort(function(a, b){
+        if(a.title.toLowerCase() < b.title.toLowerCase()) return -1;
+    })
+    } 
+    else if(method === "Z - A") {
+    array.sort(function(a, b){
+      if(a.title.toLowerCase() > b.title.toLowerCase()) return -1;
+    })
+    }
+    else if(method === "Z - A") {
+      array.sort(function(a, b){
+        if(a.title.toLowerCase() > b.title.toLowerCase()) return -1;
+    })
+    } else if(method === "Oldest to Newest") {
+      array.sort(function(a, b){
+        return a.Year-b.Year
+    })
+    }else if(method === "Newest to Oldest") {
+      array.sort(function(a, b){
+        return b.Year-a.Year
+    })
+    }
+    setMovies(array);
   }
 
   const addToCart = (item) => {
@@ -93,15 +103,15 @@ const CineApp = () => {
             <div className='logo'>
             <img  src = "https://res.cloudinary.com/dkcpu9uv8/image/upload/v1671371147/popcorn_yann2i.png" alt='logo' className='logojapon' data-testid="logo"/>
             </div>
-            <SearchBox/>
+            <SearchBox />
       {/* <Categories selectedCategories={selectedCategories} setCategories={setCategories} />  */}
       <Cart products={cart} changeQuantity={changeQuantity}/>
       </header>
       <div className='background'>
       </div>
+
       <div className='prod'>
-      <Products products={products} sortProducts={sortProducts} addToCart={addToCart} />
-      
+      <Movies products={movies} sortProducts={sortMovies} addToCart={addToCart} /> 
       </div>
     <Footer />
     </article>

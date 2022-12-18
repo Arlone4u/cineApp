@@ -48,7 +48,7 @@ const Cart = ({products, changeQuantity}) => {
                             products.length === 0 
                             ? 
                             <div className="empty-cart">
-                                <p> No items in your cart, PLEASE ADD A ITEMS IN YOUR CART!!!</p>
+                                <p> Your Cart is Empty!!!</p>
                             </div> 
                             :
                             products.map(product => {
