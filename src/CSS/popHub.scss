@@ -1,12 +1,12 @@
 $ProductBod: hsl(0, 2%, 47%);
-$NavColor: whitesmoke;
+$NavColor: #080f14;
 $FoodNFontColor : #196ead;
 $CardBorder : #cccccc;
 $ItemColor: #333333;
 $ItemTitle: darkgoldenrod;
 $Size: wheat;
 $AddCart: white;
-$Backg: #1b1920;
+$Backg: #11181f;
 $AddCartH: black;
 $AddtoCartHB: whitesmoke;
 $Sidebar: #999999;
@@ -50,6 +50,7 @@ $FontSize: 1.2rem;
     top: 0;
     overflow: hidden;
     background-color: $NavColor;
+    box-shadow: 5px 5px 20px rgb(59, 59, 59);
 }
 .sizes {
     margin: 5px;
@@ -70,6 +71,7 @@ $FontSize: 1.2rem;
     cursor: pointer;
     font-weight: bold;
     background: transparent;
+    color: $Sidebar;
 }
 .selected-size {
     border-bottom: 1px $Size solid;
@@ -87,7 +89,12 @@ $FontSize: 1.2rem;
     margin: auto;
 }
 .products {
-    margin: 5px;
+    margin: 0px;
+    margin-top: 5px;
+    background-color: $Backg;
+}
+article{
+    background-color: $Backg;
 }
 .products-nav {
     display: flex;
@@ -125,8 +132,8 @@ $FontSize: 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px auto;
-    border: 10px solid $CardBorder;
+    // margin: 10px auto;
+    // border: 10px solid $CardBorder;
     border-radius: 4px;
     padding: 30px 30px;
 }
