@@ -6,7 +6,7 @@ export default function filterList(arr, method) {
 
     else {
           return movies.filter(movies => {
-          const sizeArray = movies.size.split(" ");
+          const sizeArray = movies.size.split("");
           if(arr.length > 0) {
                 if(sizeArray.some(r => arr.indexOf(r) >= 0)) {
                     return movies;

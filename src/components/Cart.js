@@ -1,22 +1,26 @@
 import React, { Fragment, useState, useEffect } from 'react';
-
+import { FaShoppingCart } from "react-icons/fa";
 import CartItem from './CartItem';
 
 const Cart = ({products, changeQuantity}) => {
 
     const [classActive, toggleClass] = useState(false);
     const [sum, setSum] = useState(0);
+    const [quant,setQuant] = useState(0);
 
     const toggleButton = () => {
-        toggleClass(!classActive);
+        toggleClass(!classActive);        
     }
 
     useEffect(() => {
         let total = 0;
+        let numquant = 0;
         for(var i = 0; i < products?.length ; i++) {
-            total+= products[i].price*products[i].quantity;
+            total += products[i].price*products[i].quantity;
+            numquant += products[i].quantity;
         }
         setSum(total);
+        setQuant(numquant);
     }, [products])
 
     const checkout = () => {
@@ -28,16 +32,16 @@ const Cart = ({products, changeQuantity}) => {
             <div id="sidebar" className={classActive ? "active" : ""} data-testid="navcart">
                 <div className="sidebar-content">
                     <div className="toggle-btn" onClick={toggleButton}>
-                        <span className="span-1"></span>
-                        <span className="span-2"></span>
-                        <span className="span-3"></span>
+                    <FaShoppingCart />
+                        <i>{quant}</i>
                     </div>
+                   
+                    
                     <div className="cart-content">
                     <h3>
                         <img src="https://res.cloudinary.com/dkcpu9uv8/image/upload/v1671370636/black-shopping-cart-icon-22_bs6vef.png" alt="cart" />
                         Your  Movie Cart
                     </h3> 
-
                     <div className="cart-list" data-testid="cart">
                         {
                             products?.length === 0 

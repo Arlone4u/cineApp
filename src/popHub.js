@@ -9,10 +9,8 @@ import Footer from './Footer';
 const CineApp = () => {
 
   const [movies, setMovies] = useState([]);
-  const [selectedCategories, setSelectedCategories] = useState([]);
   const [cart, setCart] = useState([]);
-  const [searchValue, setSearchValue] = useState('');
-
+  
   useEffect(() => {
     setMovies(filterList([], null));
     if(JSON.parse(localStorage.getItem("cart"))) {
