@@ -36,6 +36,22 @@
   box-shadow: 5px 5px 20px rgb(44, 44, 44);
 }
 
+.form-control {
+  border: 1px solid #11181f;
+  border-radius: 5px;
+  height: 30px;
+  width: 100%;
+  padding: 20px 23px 20px 30px;
+  outline: 0;
+  background-color: rgba(134, 134, 134, 0.1725490196);
+  margin-top: 30px;
+  color: whitesmoke;
+}
+.form-control:hover, .form-control :focus {
+  border: 1.5px solid #012420;
+  background-color: rgba(65, 65, 65, 0.884);
+}
+
 .sizes {
   margin: 5px;
 }
