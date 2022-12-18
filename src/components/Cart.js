@@ -20,7 +20,7 @@ const Cart = ({products, changeQuantity}) => {
     }, [products])
 
     const checkout = () => {
-        alert(`Checkout - Subtotal: ₱ ${sum.toFixed(2)}`)
+        alert(`Checkout - Subtotal: PHP ${sum.toFixed(2)}`)
     }
 
     return (
@@ -44,7 +44,7 @@ const Cart = ({products, changeQuantity}) => {
                             products.length === 0 
                             ? 
                             <div className="empty-cart">
-                                <p>There are no items in Cart, Please add items to checkout!!!</p>
+                                <p> No items in your cart, PLEASE ADD A ITEMS IN YOUR CART!!!</p>
                             </div> 
                             :
                             products.map(product => {
@@ -63,7 +63,7 @@ const Cart = ({products, changeQuantity}) => {
                         <div className="checkout">
                                 <div className="subtotal-div">
                                     <p className="subtotal">SUBTOTAL</p>
-                                    <p className="subtotal-price">₱ {sum.toFixed(2)}</p>
+                                    <p className="subtotal-price">PHP {sum.toFixed(2)}</p>
                                 </div>
                                 <button className="checkout-btn" data-testid="checkoutbtn" onClick={checkout}>CHECKOUT</button>
                         </div>

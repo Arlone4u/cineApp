@@ -17,6 +17,10 @@
      object-fit: cover;
 }
 
+.background {
+  background-color: none;
+}
+
 .logo {
   display: flex;
   height: 200px;
@@ -32,7 +36,8 @@
   position: sticky;
   top: 0;
   overflow: hidden;
-  background-color: whitesmoke;
+  background-color: #080f14;
+  box-shadow: 5px 5px 20px rgb(59, 59, 59);
 }
 
 .sizes {
@@ -56,6 +61,7 @@
   cursor: pointer;
   font-weight: bold;
   background: transparent;
+  color: #999999;
 }
 
 .selected-size {
@@ -78,7 +84,13 @@
 }
 
 .products {
-  margin: 5px;
+  margin: 0px;
+  margin-top: 5px;
+  background-color: #11181f;
+}
+
+article {
+  background-color: #11181f;
 }
 
 .products-nav {
@@ -125,8 +137,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px auto;
-  border: 10px solid #cccccc;
   border-radius: 4px;
   padding: 30px 30px;
 }
@@ -160,7 +170,7 @@
   font-size: 1.2rem;
   color: white;
   cursor: pointer;
-  background: #1b1920;
+  background: #11181f;
   border: 0;
   border-radius: 4px;
   transition: background 0.4s;
