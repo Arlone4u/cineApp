@@ -90,7 +90,7 @@ const CineApp = () => {
         <article>
         <header className='nav' data-testid = 'nav'>
             <div className='logo'>
-            <img  src = "https://res.cloudinary.com/dkcpu9uv8/image/upload/v1671371147/popcorn_yann2i.png" className='logojapon' data-testid="logo"/>
+            <img  src = "https://res.cloudinary.com/dkcpu9uv8/image/upload/v1671371147/popcorn_yann2i.png" alt='logo' className='logojapon' data-testid="logo"/>
             </div>
       <Categories selectedCategories={selectedCategories} setCategories={setCategories} />
       <Cart products={cart} changeQuantity={changeQuantity}/>
