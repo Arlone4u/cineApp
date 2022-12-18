@@ -4,7 +4,7 @@ import Categories from './components/Categories';
 import Products from './components/Products';
 import Cart from './components/Cart';
 import filterList from './components/filterList';
-import './CSS/Oncet.css';
+import './CSS/popHub.css';
 import Footer from './Footer';
 
 const CineApp = () => {

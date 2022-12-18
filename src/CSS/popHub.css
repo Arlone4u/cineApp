@@ -17,6 +17,10 @@
      object-fit: cover;
 }
 
+.background {
+  background-color: none;
+}
+
 .logo {
   display: flex;
   height: 200px;
@@ -132,9 +136,14 @@
 }
 
 .card-title {
+  text-align: center;
+  width: 270px;
+  height: 21px;
   margin-top: 9px;
   margin-bottom: 3px;
   color: #196ead;
+  overflow-x: hidden;
+  overflow-y: hidden;
   cursor: pointer;
 }
 
@@ -407,4 +416,4 @@
   .cart-list {
     height: 54vh;
   }
-}/*# sourceMappingURL=Oncet.css.map */
+}/*# sourceMappingURL=popHub.css.map */
