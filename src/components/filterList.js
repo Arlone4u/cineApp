@@ -1,4 +1,4 @@
-import products from '../products.json'
+import products from '../movies.json'
 
 export default function filterList(arr, method) {
 

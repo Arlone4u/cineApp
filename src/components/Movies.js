@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import CardList from './CardList';
 
-const Products = ({products, sortProducts, addToCart}) =>  {
+const Movies = ({products, sortProducts, addToCart}) =>  {
 
     const [value, setValue] = useState('Select');
 
@@ -18,9 +18,13 @@ const Products = ({products, sortProducts, addToCart}) =>  {
                 <div className="sort-list">
                     Sort by&nbsp;: &nbsp;
                     <select value={value} onChange={setList}>
-                        <option value="Select">Choose</option>
+                        <option value="Choose">Choose</option>
                         <option value="Highest to Lowest">Highest to Lowest</option>
                         <option value="Lowest to Highest">Lowest to Highest</option>
+                        <option value="A - Z">A - Z</option>
+                        <option value="Z - A">Z - A</option>
+                        <option value="Oldest to Newest">Oldest to Newest</option>
+                        <option value="Newest to Oldest">Newest to Oldest</option>
                     </select>
                 </div>
             </div>
@@ -31,4 +35,4 @@ const Products = ({products, sortProducts, addToCart}) =>  {
     )
 }
 
-export default Products;
+export default Movies;
