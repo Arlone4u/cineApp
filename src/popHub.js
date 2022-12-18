@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import Categories from './components/Categories';
 import Products from './components/Products';
 import Cart from './components/Cart';
+import SearchBox from './components/SearchBox';
 import filterList from './components/filterList';
 import './CSS/popHub.css';
 import Footer from './Footer';
@@ -92,7 +93,8 @@ const CineApp = () => {
             <div className='logo'>
             <img  src = "https://res.cloudinary.com/dkcpu9uv8/image/upload/v1671371147/popcorn_yann2i.png" alt='logo' className='logojapon' data-testid="logo"/>
             </div>
-      <Categories selectedCategories={selectedCategories} setCategories={setCategories} />
+            <SearchBox/>
+      {/* <Categories selectedCategories={selectedCategories} setCategories={setCategories} />  */}
       <Cart products={cart} changeQuantity={changeQuantity}/>
       </header>
       <div className='background'>
