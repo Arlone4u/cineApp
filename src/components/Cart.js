@@ -36,7 +36,6 @@ const Cart = ({products, changeQuantity}) => {
                         <span className="span-3"></span>
                     </div>
                     
-                                        
                     <div className="cart-content">
                     <h3>
                         <img src="https://res.cloudinary.com/dkcpu9uv8/image/upload/v1671370636/black-shopping-cart-icon-22_bs6vef.png" alt="cart" />

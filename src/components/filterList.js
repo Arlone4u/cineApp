@@ -1,19 +1,19 @@
-import products from '../movies.json'
+import movies from '../movies.json'
 
 export default function filterList(arr, method) {
 
-    if(method == null) return products;
+    if(method == null) return movies;
 
     else {
-          return products.filter(product => {
-          const sizeArray = product.size.split(" ");
+          return movies.filter(movies => {
+          const sizeArray = movies.size.split(" ");
           if(arr.length > 0) {
                 if(sizeArray.some(r => arr.indexOf(r) >= 0)) {
-                    return product;
+                    return movies;
             }
           }
           else {
-              return products;
+              return movies;
           }
       })  
     }

@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import Movies from './components/Movies';
 import Cart from './components/Cart';
 import SearchBox from './components/SearchBox';
-import MovieList from './components/MovieList';
 import filterList from './components/filterList';
 import './CSS/popHub.css';
 import Footer from './Footer';
@@ -20,7 +19,6 @@ const CineApp = () => {
       setCart(JSON.parse(localStorage.getItem("cart")));
     }
   }, [])
-
 
   const sortMovies = (method) => {
     const array = movies;
@@ -104,7 +102,6 @@ const CineApp = () => {
             <img  src = {require("./components/logo.png")} alt='logo' className='logojapon' data-testid="logo"/>
             </div>
             <SearchBox />
-      {/* <Categories selectedCategories={selectedCategories} setCategories={setCategories} />  */}
       <Cart products={cart} changeQuantity={changeQuantity}/>
       </header>
       <div className='background'>

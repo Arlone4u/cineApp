@@ -19,7 +19,7 @@ const CardList = ({products, addToCart}) => {
                 delay ? <img src="https://res.cloudinary.com/dkcpu9uv8/image/upload/v1671369137/loading-11_gm3kfd.gif" alt="loader" className="loader"/>
                 :
                 <div>
-                    <span className="products-length">{products.length} Item(s) found.</span>
+                    <span className="products-length">{products.length} Movie(s) found.</span>
                     <div className="card-list">
                         {
                             products.length === 0 ? <p className="text-center">Sorry, No products of the specified categories :-(</p> :
