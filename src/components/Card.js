@@ -10,7 +10,7 @@ const Card = ({data, addToCart}) => {
             </div>
             <div className="card-info">
             <h3 className="card-title">{data.title}</h3>
-            <p className="card-price"><span>PHP {data.price}</span></p>
+            <p className="card-price"><span>PHP {data.price}.00/Day</span></p>
             
             </div>
            </div>

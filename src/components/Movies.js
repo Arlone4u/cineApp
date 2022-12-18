@@ -12,10 +12,9 @@ const Movies = ({products, sortProducts, addToCart}) =>  {
     }
     
     return (
-        
         <div className="products" data-testId="product">
             <div className="products-nav">
-                <div className="sort-list">
+                <div className="sort-list" data-testid="sort">
                     Sort by&nbsp;: &nbsp;
                     <select value={value} onChange={setList}>
                         <option value="Choose">Choose</option>
