@@ -178,12 +178,23 @@
     {
         "id": "15",
         "title": "Bad Buddy",
-        "Year": "2021-2022",
+        "Year": "2021",
         "imdbID": "tt0892791",
         "Type":  "movie",
-        "genre": "animation adventure comedy",
+        "genre": "animation",
         "img": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b7/Bad_Buddy_Series_2021_poster.jpg/250px-Bad_Buddy_Series_2021_poster.jpg",
         "price": 400,
+        "quantity": 0
+    },
+    {
+        "id": "16",
+        "title": "Borat",
+        "Year": "2006",
+        "imdbID": "tt0443453",
+        "Type":  "movie",
+        "genre": "comedy",
+        "img": "https://m.media-amazon.com/images/M/MV5BMTk0MTQ3NDQ4Ml5BMl5BanBnXkFtZTcwOTQ3OTQzMw@@._V1_.jpg",
+        "price": 500,
         "quantity": 0
     }
 ]
