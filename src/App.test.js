@@ -5,7 +5,11 @@ import CineApp from "./popHub"
 afterEach(cleanup);
 
 describe("Main Page",()=>{
+<<<<<<< HEAD
   it('has a logo',() => {
+=======
+  it('has a logo with the correct image and alt text',() => {
+>>>>>>> 2c8241dfb8e30e6b809707829cd5051aff96d05f
     render(<CineApp/>);
     const image = screen.getByAltText('logo');
     expect(image).toBeInTheDocument()
