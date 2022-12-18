@@ -6,6 +6,7 @@
         "imdbID": "tt1825683",
         "Type": "movie",
         "img": "https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_SX300.jpg",
+        "backGround": "https://c4.wallpaperflare.com/wallpaper/690/285/233/5bd08042c789d-wallpaper-preview.jpg",
         "price": 200,
         "quantity": 0
     },
@@ -16,7 +17,7 @@
         "imdbID": "tt9114286",
         "Type": "movie",
         "img": "https://m.media-amazon.com/images/M/MV5BNTM4NjIxNmEtYWE5NS00NDczLTkyNWQtYThhNmQyZGQzMjM0XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg",
-        "backGround":"", 
+        "backGround":"https://assets-prd.ignimgs.com/2022/11/07/wakanda-blogroll-1667853887859.jpg", 
         "price": 180,
         "quantity": 0
     },
@@ -27,6 +28,7 @@
         "imdbID": "tt1517268",
         "Type": "movie",
         "img":  "https://m.media-amazon.com/images/M/MV5BNzliODE4NDQtYzEwNy00N2QyLTk2ZGQtZGZhNDU0NjVlZDMyXkEyXkFqcGdeQXVyMTU0Mjc4MTY4._V1_.jpg",
+        "backGround":"https://www.cnet.com/a/img/resize/1ab2b8138c0f0c53778127a20ea146b0498005bf/hub/2022/04/27/418462e8-69a3-40fa-b1a8-8be05dcbdc2e/rev-1-barbie-instavert-high-res-jpeg-promo-1.jpg?auto=webp&fit=crop&height=675&width=1200",
         "price": 300,
         "quantity": 0
     },
@@ -37,6 +39,7 @@
         "imdbID": "tt1877830",
         "Type": "movie",
         "img":  "https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg",
+        "backGround":"https://images3.alphacoders.com/118/thumb-1920-1185634.jpg",
         "price": 250,
         "quantity": 0
     },

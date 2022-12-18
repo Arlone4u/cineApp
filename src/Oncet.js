@@ -89,7 +89,9 @@ const CineApp = () => {
       <Categories selectedCategories={selectedCategories} setCategories={setCategories} />
       <Cart products={cart} changeQuantity={changeQuantity}/>
       </header>
-      
+      <div className='background'>
+        
+      </div>
       <div className='prod'>
       <Products products={products} sortProducts={sortProducts} addToCart={addToCart} />
       
