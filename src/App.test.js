@@ -2,6 +2,7 @@ import { render, screen, cleanup } from "@testing-library/react"
 
 import CineApp from "./popHub"
 import SearchBox from "./components/SearchBox";
+import Movies from "./components/Movies";
 
 afterEach(cleanup);
 
@@ -23,6 +24,12 @@ describe("Main Page",()=>{
     render(<CineApp/>)
     const list = screen.getByTestId("productslist")
     expect(list).toBeInTheDocument()
+  })
+
+  it("has a drop down field to sort movies", () => {
+    render(<Movies/>)
+    const sort = screen.getByTestId("sort")
+    expect(sort).toBeInTheDocument()
   })
 })
 
