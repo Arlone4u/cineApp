@@ -57,6 +57,7 @@ const CineApp = () => {
     }
     const index = productList.indexOf(item);
     productList[index].quantity++;
+    productList[index].cartPrice = productList[index].quantity * productList[index].price;
     setCart(productList);
     localStorage.setItem("cart", JSON.stringify(productList));
   }
@@ -64,15 +65,20 @@ const CineApp = () => {
   const changeQuantity = (item, e) => {
     const productList = [...cart];
     const index = productList.indexOf(item);
+  
     if(e === '+') {
       productList[index].quantity++;
+      productList[index].cartPrice = productList[index].quantity * productList[index].price;
     }
     else {
       if(productList[index].quantity > 1) {
         productList[index].quantity--;
+        productList[index].cartPrice = productList[index].cartPrice - productList[index].price;
       }
       else {
+        productList[index].quantity--;
         productList.splice(index, 1);
+  
       }
     } 
     setCart(productList);
@@ -84,7 +90,7 @@ const CineApp = () => {
         <article>
         <header className='nav' data-testid = 'nav'>
             <div className='logo'>
-            <img  src = "https://res.cloudinary.com/dkcpu9uv8/image/upload/v1671371147/popcorn_yann2i.png" className='logojapon' data-testid="logo"/>
+            <img  src = "https://res.cloudinary.com/dkcpu9uv8/image/upload/v1671371147/popcorn_yann2i.png" alt='logo' className='logojapon' data-testid="logo"/>
             </div>
       <Categories selectedCategories={selectedCategories} setCategories={setCategories} />
       <Cart products={cart} changeQuantity={changeQuantity}/>

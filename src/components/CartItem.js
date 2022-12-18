@@ -7,7 +7,7 @@ const CartItem = ({product, changeQuantity}) => {
             <div>
                 <div>
                     <p className="item-title">{product.title}</p>
-                    <span className="cart-item-price">₱ {product.price}</span>
+                    <span className="cart-item-price">PHP {product.cartPrice}</span>
                 </div>
                 <div>
                     <p className="item-quantity">Quantity: <span>{product.quantity}</span></p>
