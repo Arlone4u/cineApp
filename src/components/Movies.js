@@ -5,7 +5,7 @@ import CardList from './CardList';
 const Movies = ({products, sortProducts, addToCart}) =>  {
 
     const [value, setValue] = useState('Select');
-
+    
     const setList = (e) => {
         setValue(e.target.value);
         sortProducts(e.target.value);
