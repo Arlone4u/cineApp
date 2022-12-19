@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import {useHistory} from 'react-router-dom';
+import '../CSS/popHub.css';
 
 function LoginForm() {
   const [email, setEmail] = useState('');
@@ -30,22 +31,28 @@ function LoginForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className='background'>
+      <img  src = {require("../components/logo.png")} alt='logo' className='logojapon' data-testid="logo"/>
+      <h1>Login</h1>
+      <p>input your credentials to proceed to checkout.</p>
+    <form className='form' onSubmit={handleSubmit}>
       {error && <p className="error">{error}</p>}
       <label>
-        Email:
         <input
+          className='input'
           type="email"
           value={email}
+          placeholder="email"
           onChange={(event) => setEmail(event.target.value)}
         />
       </label>
       <br />
       <label>
-        Password:
         <input
+          className='input'
           type="password"
           value={password}
+          placeholder="password"
           onChange={(event) => setPassword(event.target.value)}
         />
       </label>
@@ -54,6 +61,7 @@ function LoginForm() {
         {isLoading ? 'Logging in...' : 'Log in'}
       </button>
     </form>
+    </div>
   );
 }
 

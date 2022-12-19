@@ -17,6 +17,31 @@
      object-fit: cover;
 }
 
+.background button {
+  width: 250px;
+}
+
+.input {
+  width: 500px;
+  padding: 9px;
+  font-size: 18px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 7px;
+  border-width: 0px;
+  margin-bottom: 15px;
+}
+
+.background {
+  text-align: center;
+  border-radius: 5px;
+  margin: 100px;
+  width: 1600px;
+  height: 500px;
+  padding: 10px;
+  align-content: center;
+  background-color: rgba(8, 15, 20, 0.8235294118);
+}
+
 .logo {
   display: flex;
   height: 120px;
