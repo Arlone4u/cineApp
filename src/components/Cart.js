@@ -1,12 +1,15 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState, useEffect,useCallback } from 'react';
 import { FaShoppingCart } from "react-icons/fa";
 import CartItem from './CartItem';
+import {useHistory} from 'react-router-dom';
 
 const Cart = ({products, changeQuantity}) => {
 
     const [classActive, toggleClass] = useState(false);
     const [sum, setSum] = useState(0);
     const [quant,setQuant] = useState(0);
+    const history = useHistory();
+    const handleOnClick = () => history.push('/login');
 
     const toggleButton = () => {
         toggleClass(!classActive);        
@@ -68,7 +71,7 @@ const Cart = ({products, changeQuantity}) => {
                                     <p className="subtotal">SUBTOTAL</p>
                                     <p className="subtotal-price">PHP {sum.toFixed(2)}</p>
                                 </div>
-                            <button className="checkout-btn" data-testid="checkoutbtn" onClick={checkout}>CHECKOUT</button>
+                            <button className="checkout-btn" data-testid="checkoutbtn" onClick={handleOnClick}>CHECKOUT</button>
                         </div>
                     </div>
                     </div>
