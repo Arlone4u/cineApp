@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import {useHistory} from 'react-router-dom';
-import '../CSS/popHub.css';
+import '../CSS/login.css';
 
 function LoginForm() {
   const [email, setEmail] = useState('');
@@ -31,8 +31,7 @@ function LoginForm() {
   };
 
   return (
-    <div className='background'>
-      <img  src = {require("../components/logo.png")} alt='logo' className='logojapon' data-testid="logo"/>
+    <div className='login'>
       <h1>Login</h1>
       <p>input your credentials to proceed to checkout.</p>
     <form className='form' onSubmit={handleSubmit}>
