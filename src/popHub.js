@@ -23,12 +23,12 @@ const CineApp = () => {
     if(method === "Lowest to Highest") {
         array.sort(function(a, b){
           return a.price-b.price
-      })
+    })
     }
     else if(method === "Highest to Lowest") {
         array.sort(function(a, b){
           return b.price-a.price
-      })
+    })
     }
     else if(method === "A - Z") {
       array.sort(function(a, b){
@@ -71,7 +71,7 @@ const CineApp = () => {
       productList[index].quantity++;
       productList[index].cartPrice = productList[index].quantity * productList[index].price;
     }
-    else {
+    else if (e === '-'){
       if(productList[index].quantity > 1) {
         productList[index].quantity--;
         productList[index].cartPrice = productList[index].cartPrice - productList[index].price;
@@ -82,6 +82,10 @@ const CineApp = () => {
   
       }
     } 
+    else if (e === '<'){
+      productList[index].quantity = 0;
+      productList.splice(index, 1);
+    }
     setCart(productList);
     localStorage.setItem("cart", JSON.stringify(productList));
   }
