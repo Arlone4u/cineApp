@@ -35,6 +35,7 @@ function LoginForm() {
       <label>
         Email:
         <input
+            data-testid="email"
           type="email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
@@ -44,13 +45,14 @@ function LoginForm() {
       <label>
         Password:
         <input
+            data-testid="password"
           type="password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
         />
       </label>
       <br/>
-      <button type="submit" disabled={isLoading} onClick={handleOnClick}>
+      <button type="submit" data-testid="loginbtn" disabled={isLoading} onClick={handleOnClick}>
         {isLoading ? 'Logging in...' : 'Log in'}
       </button>
     </form>
