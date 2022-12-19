@@ -1,36 +1,57 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-function LoginButton() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+function LoginForm() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const handleClick = async () => {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     setIsLoading(true);
 
     try {
-      const response = await axios.get('https://reqres.in/api/login');
+      const response = await axios.post('https://reqres.in/api/login', {
+        email,
+        password
+      });
       console.log(response);
-      setIsLoggedIn(true);
       setIsLoading(false);
       setError('');
     } catch (error) {
       console.error(error);
       setIsLoading(false);
-      setError('An error occurred while checking login status.');
+      setError('An error occurred while logging in.');
     }
   };
 
   return (
-    <>
+    <form onSubmit={handleSubmit}>
       {error && <p className="error">{error}</p>}
-      <button onClick={handleClick} disabled={isLoading}>
-        {isLoading ? 'Checking login status...' : 'Check login status'}
+      <label>
+        Email:
+        <input
+          type="email"
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+        />
+      </label>
+      <br />
+      <label>
+        Password:
+        <input
+          type="password"
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+        />
+      </label>
+      <br />
+      <button type="submit" disabled={isLoading}>
+        {isLoading ? 'Logging in...' : 'Log in'}
       </button>
-      {isLoggedIn && <p>You are logged in!</p>}
-    </>
+    </form>
   );
 }
 
-export default LoginButton;
+export default LoginForm;
