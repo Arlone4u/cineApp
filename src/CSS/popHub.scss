@@ -49,6 +49,7 @@ $gradient: linear-gradient(rgba(0.5, 0, 0, 0), rgba(0.5, 0, 0, 0));
     top: 0;
     overflow: hidden;
     background-color: $NavColor;
+    z-index: 1;
 }
 .form-control{
     border: 1px solid $Backg;
@@ -155,7 +156,7 @@ article{
     position: relative;
     padding-left: 50px;
     padding-bottom: 50px;
-    
+    z-index: 0;
     .test{
         height: 380px;
         
@@ -177,7 +178,8 @@ article{
         transition: transform 1s;
         width: 280px;
         position: absolute;
-        margin-left: 5px;
+        
+        background-color: $Backg;
         .card-title {
             text-align: left;
             color: white;
@@ -283,6 +285,8 @@ article{
     overflow-y: auto;
     height: 68vh;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    
+    
 }
 .empty-cart{
     background-color: rgb(255, 78, 78);
