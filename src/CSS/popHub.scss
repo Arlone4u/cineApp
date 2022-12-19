@@ -173,23 +173,33 @@ article{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
 }
 
-.test:hover {
-   transform: scale(1.3);
+// .test:hover {
+//    transform: scale(1.3);
    
-}
+// }
 
-.test:hover .card-info {
-    transform: scale(1.1);
-    background-image: linear-gradient(#11181f 20%, #11181f00);
-    height: 350px;
+// .test:hover .card-info {
+//     transform: scale(1.1);
+//     background-image: linear-gradient(#11181f 20%, #11181f00);
+//     height: 350px;
 
- }
+//  }
 
 .card {
+    transition: transform 0.5s;
     position: relative;
     padding-left: 50px;
     padding-bottom: 50px;
     z-index: 0;
+    &:hover {
+    transform: scale(1.1);
+    // background-image: linear-gradient(#11181f 20%, #11181f00);
+        width: 280px;
+        height: 380px;
+        // padding-left: 2px;
+        align-content: center;
+    // box-shadow: 5px 5px 20px black;
+    }
     .test{
         height: 380px;
         transition: transform 1s;

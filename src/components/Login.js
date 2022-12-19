@@ -40,6 +40,7 @@ function LoginForm() {
       <label>
         <input
           className='input'
+            data-testid="email"
           type="email"
           value={email}
           placeholder="email"
@@ -50,6 +51,7 @@ function LoginForm() {
       <label>
         <input
           className='input'
+            data-testid="password"
           type="password"
           value={password}
           placeholder="password"
@@ -57,7 +59,7 @@ function LoginForm() {
         />
       </label>
       <br/>
-      <button type="submit" disabled={isLoading} onClick={handleOnClick}>
+      <button type="submit" data-testid="loginbtn" disabled={isLoading} onClick={handleOnClick}>
         {isLoading ? 'Logging in...' : 'Log in'}
       </button>
     </form>

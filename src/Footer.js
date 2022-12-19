@@ -10,7 +10,7 @@ return(
       <div class="top">
         <div class="logo-details">
           <i class="fab fa-slack"></i>
-          <span class="logo_name">POPCORN HUB</span>
+          <span class="logo_name">STREAM</span>
         </div>
       </div>
       <div class="link-boxes">
@@ -47,7 +47,7 @@ return(
         <span class="copyright_text">Copyright © 2022 <a href="/#">Donjie and Friends.</a>All rights deserved</span>
         <span class="policy_terms">
           <a href="/#">Privacy policy</a>
-          <a href="/#">Terms & condition</a>
+          <a href="/#">Terms & Conditions</a>
         </span>
       </div>
     </div>
