@@ -36,8 +36,8 @@ const CineApp = () => {
     })
     } 
     else if(method === "Z - A") {
-      array.sort(function(a, b){
-        if(a.title.toLowerCase() > b.title.toLowerCase()) return -1;
+    array.sort(function(a, b){
+      if(a.title.toLowerCase() > b.title.toLowerCase()) return -1;
     })
     } else if(method === "Oldest to Newest") {
       array.sort(function(a, b){
