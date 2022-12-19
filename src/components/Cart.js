@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect,useCallback } from 'react';
+import React, { Fragment, useState, useEffect} from 'react';
 import { FaShoppingCart } from "react-icons/fa";
 import CartItem from './CartItem';
 import {useHistory} from 'react-router-dom';
