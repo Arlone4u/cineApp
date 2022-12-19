@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Movies from './components/Movies';
 import Cart from './components/Cart';
-import SearchBox from './components/SearchBox';
 import filterList from './components/filterList';
 import './CSS/popHub.css';
 import Footer from './Footer';
@@ -99,7 +98,7 @@ const CineApp = () => {
             <div className='logo'>
             <img  src = {require("./components/logo.png")} alt='logo' className='logojapon' data-testid="logo"/>
             </div>
-            <SearchBox />
+        
       <Cart products={cart} changeQuantity={changeQuantity}/>
       </header>
       <div className='background'>
