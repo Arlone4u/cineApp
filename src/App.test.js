@@ -5,7 +5,6 @@ import SearchBox from "./components/SearchBox";
 import Movies from "./components/Movies";
 import Footer from "./Footer";
 import Cart from "./components/Cart";
-import { useEffect } from "react";
 
 afterEach(cleanup);
 
@@ -36,7 +35,6 @@ describe("Main Page",()=>{
    })
 
    it("has a button to bring up the movie cart",() => {
-
    })
 })
 
@@ -50,6 +48,9 @@ describe("Footer", () => {
 
 describe("Movie Cart", () => {
   it("list of orders", () => {
+    render(<Cart/>)
+    const list = screen.getByTestId("cart")
+    expect(list).toBeInTheDocument()
 	});
 
   it("shows current total price", () => {
