@@ -103,6 +103,11 @@ const CineApp = () => {
       <div className='background'>
       </div>
       <div className='prod' data-testid="productslist">
+      <div className="featured">
+        <h3>Stream Premium Movies Online</h3>
+        <p>With our best catalogue of the newest and best movies, stream and rent online and on-demand</p>
+        <p>for the lowest price!</p>
+      </div>
       <Movies products={movies} sortProducts={sortMovies} addToCart={addToCart} /> 
       </div>
     <Footer />

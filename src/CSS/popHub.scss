@@ -413,6 +413,21 @@ article{
     background: #535353;
     cursor: pointer;
 }
+.featured{
+    color: white;
+    text-align: center;
+    width: inherit;
+    background-color: $NavColor;
+    padding-top: 5px;
+    padding-bottom:10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.493);
+}
+.featured h3{
+    font-size: 70px;
+}
+.featured p{
+    font-size: 25px;
+}
 .delete-btn{
     margin-left: 10px;
     font-size: 1rem;

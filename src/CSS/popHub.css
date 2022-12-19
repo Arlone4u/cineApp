@@ -427,6 +427,24 @@ article {
   cursor: pointer;
 }
 
+.featured {
+  color: white;
+  text-align: center;
+  width: inherit;
+  background-color: rgba(8, 15, 20, 0.8235294118);
+  padding-top: 5px;
+  padding-bottom: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.493);
+}
+
+.featured h3 {
+  font-size: 70px;
+}
+
+.featured p {
+  font-size: 25px;
+}
+
 .delete-btn {
   margin-left: 10px;
   font-size: 1rem;
