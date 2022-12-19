@@ -15,7 +15,7 @@ const CartItem = ({product, changeQuantity}) => {
                     <div>
                      <button className="quantity-btn" data-testid ="minus"onClick={() => changeQuantity(product, '-')}>-</button>
                      <button className="quantity-btn" data-testid ="plus" onClick={() => changeQuantity(product, '+')}>+</button>
-                     <button className="quantity-btn" data-testid ="delete" onClick={() => changeQuantity(product, '<')}><FaTrash /></button>
+                     <button className="delete-btn" data-testid ="delete" onClick={() => changeQuantity(product, '<')}><FaTrash /></button>
                     </div>
                 </div>
             </div>

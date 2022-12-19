@@ -1,7 +1,7 @@
 $ProductBod: hsl(0, 2%, 47%);
 $NavColor: #080f14d2;
 $FontColor : #196ead;
-$FoodNFontColor: #196ead; 
+$FoodNFontColor: #0a1d2b; 
 $CardBorder : #cccccc;
 $ItemColor: #333333;
 $ItemTitle: darkgoldenrod;
@@ -122,16 +122,23 @@ article{
 .products-nav h3 {
     margin: 0;
 }
+.sort-list{
+    color: white;
+}
 .sort-list select {
+    color: white;
     font-size: 1rem;
     padding: 4px 6px;
     background: inherit;
     border: 1px solid $CardBorder;
     border-radius: 4px;
     left: 0;
+    &:hover{
+        color: gray;
+    }
 }
 .sort-list select:focus {
-    outline-color: $FoodNFontColor;
+    background-color: $FoodNFontColor;
 }
 .products-length {
     font-size: 0.9rem;
@@ -150,7 +157,8 @@ article{
 
 .test:hover .card-info {
     transform: scale(1.1);
-    background-image: linear-gradient(#11181f, #11181f00);
+    background-image: linear-gradient(#11181f 20%, #11181f00);
+    height: 350px;
 
  }
 
@@ -164,6 +172,7 @@ article{
         transition: transform 1s;
         align-items: center;
         justify-content: center;
+        
     }
 
 
@@ -178,10 +187,12 @@ article{
     }
     .card-info{
         transition: transform 1s;
+        
         width: 280px;
         position: absolute;
         padding-left: 20px;
         padding-top:10px;
+        background-image: linear-gradient(#11181f, #11181f00);
         
         .card-title {
             text-align: left;
@@ -248,15 +259,20 @@ article{
     border-bottom: 1px solid rgb(100, 100, 100, 0.3);
   } */
 .toggle-btn {
+    margin-top:-10  px;
+    padding: 10px;
+    width: 50px;
+    border-radius: 50px;
     position: absolute;
     right: 520px;
     cursor: pointer;
     background-color: rgb(175, 175, 175);
     &:hover{
-        background-color: rgb(175, 175, 175);
+        background-color: rgb(204, 204, 204);
     }
  
 }
+
 .toggle-btn span {
     display: block;
     width: 35px;
@@ -379,10 +395,10 @@ article{
     text-transform: uppercase;
 }
 .item-quantity {
-    color: $ItemColor;
+    color: white;
 }
 .cart-item-price {
-    color: $ItemColor;
+    color: white;
     font-size: 1.7rem;
 }
 .quantity-btn {
@@ -394,6 +410,18 @@ article{
     width: 25px;
     height: 25px;
     color: white;
+    background: #535353;
+    cursor: pointer;
+}
+.delete-btn{
+    margin-left: 10px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 5px;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    color: rgb(240, 76, 76);
     background: #535353;
     cursor: pointer;
 }
@@ -437,6 +465,7 @@ article{
         top: 20px;
         right: 20px;
         cursor: pointer;
+        background-color: #012420;
     }
     .cart-list {
         height: 54vh;
