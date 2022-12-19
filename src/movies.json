@@ -47,6 +47,7 @@
         "genre": "crime",
         "img":  "https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg",
         "backGround":"https://images3.alphacoders.com/118/thumb-1920-1185634.jpg",
+        "clip": "https://media1.giphy.com/media/EMpPEre2PqFy8GkOZE/giphy.gif?cid=ecf05e47r1wkrvon6cmvy2xyics5yymk881j8impp9sejrsa&rid=giphy.gif&ct=g",
         "price": 250,
         "quantity": 0,
         "cartPrice": 250
