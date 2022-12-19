@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaTrash } from "react-icons/fa";
 
 const CartItem = ({product, changeQuantity}) => {
     return (
@@ -14,6 +15,7 @@ const CartItem = ({product, changeQuantity}) => {
                     <div>
                      <button className="quantity-btn" data-testid ="minus"onClick={() => changeQuantity(product, '-')}>-</button>
                      <button className="quantity-btn" data-testid ="plus" onClick={() => changeQuantity(product, '+')}>+</button>
+                     <button className="quantity-btn" data-testid ="delete" onClick={() => changeQuantity(product, '<')}><FaTrash /></button>
                     </div>
                 </div>
             </div>
