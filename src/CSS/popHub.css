@@ -33,6 +33,7 @@
   top: 0;
   overflow: hidden;
   background-color: rgba(8, 15, 20, 0.8235294118);
+  z-index: 1;
 }
 
 .form-control {
@@ -155,6 +156,7 @@ article {
   position: relative;
   padding-left: 50px;
   padding-bottom: 50px;
+  z-index: 0;
 }
 .card .test {
   height: 380px;
@@ -172,7 +174,7 @@ article {
   transition: transform 1s;
   width: 280px;
   position: absolute;
-  margin-left: 5px;
+  background-color: #11181f;
 }
 .card .card-info .card-title {
   text-align: left;
