@@ -90,12 +90,13 @@ const CineApp = () => {
     localStorage.setItem("cart", JSON.stringify(productList));
   }
   
+  
   return (
     <div>
         <article>
         <header className='nav' data-testid = 'nav'>
             <div className='logo'>
-            <img  src = {require("./components/logo.png")} alt='logo' className='logojapon' data-testid="logo"/>
+              <img  src = {require("./components/logo.png")} alt='logo' className='logojapon' data-testid="logo"/>
             </div>
         
       <Cart products={cart} changeQuantity={changeQuantity}/>

@@ -52,7 +52,7 @@ function LoginForm() {
         />
       </label>
       <br/>
-      <button type="submit" data-testid="loginbtn" disabled={isLoading} onClick={handleOnClick}>
+      <button type="submit" data-testid="logi" disabled={isLoading} onClick={handleOnClick}>
         {isLoading ? 'Logging in...' : 'Log in'}
       </button>
     </form>
