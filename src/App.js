@@ -7,10 +7,10 @@ const App = () => {
 
 return(
 <Router>
- <Switch>
+    <Switch>
     <Route exact path= "/" component={PopcornHub}/>   
     <Route exact path= "/login" component={Login}/>
- </Switch>
+    </Switch>
  </Router>
 );
 
